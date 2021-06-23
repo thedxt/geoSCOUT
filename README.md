@@ -21,6 +21,7 @@ To make this script work you will need to do the following:
 * take a copy of one of the updated shortcut files (this happens after you run new Setup_geoSCOUTLauncher.exe)
 * make a zip file that has the new Setup_geoSCOUTLauncher.exe and the updated geoSCOUT.lnk shorcut. (all the files need to be in the root of the zip)
 * host the zip file somewhere where you can download it and update the script $GeoDL to reflect the location.
+* run the script as admin or run as system if using other script deployment tools
 
 ### known issues
 
