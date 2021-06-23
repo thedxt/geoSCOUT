@@ -24,4 +24,4 @@ To make this script work you will need to do the following:
 
 ### known issues
 
-If geoSCOUT is not found on a system you may get an error of "Resolve-Path : Cannot find path 'C:\Program Files (x86)\geoSCOUT\geoSCOUT.exe' because it does not exist." this can be ignored as the script aborts if geoSCOUT is not found
+If geoSCOUT is not found on a system you may get an error of `Resolve-Path : Cannot find path 'C:\Program Files (x86)\geoSCOUT\geoSCOUT.exe' because it does not exist.` this can be ignored as the script aborts if geoSCOUT is not found
