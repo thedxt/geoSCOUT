@@ -26,3 +26,27 @@ To make this script work you will need to do the following:
 ### known issues
 
 If geoSCOUT is not found on a system you may get an error of `Resolve-Path : Cannot find path 'C:\Program Files (x86)\geoSCOUT\geoSCOUT.exe' because it does not exist.` this can be ignored as the script aborts if geoSCOUT is not found
+
+## geoSCOUT published
+
+### **This has only been tested with the network install version of geoSCOUT**
+
+The script will check if the user has the geoLOGIC systems app data folder if they don't it will run the geoSCOUT non admin installer silently then run the geoSCOUT exe. If the user already has the geoLOGIC systems app data folder it will run the geoSCOUT exe normally.
+
+The script does the following:
+* checks if the user has the geoLOGIC systems app data folder
+* runs the geoSCOUT non admin install silently if the user does not have the geoLOGIC systems app data folder and then runs geoSCOUT normally
+* runs geoSCOUT normally if the user already has the geoLOGIC systems app data folder
+* will write output to confirm the steps of the script
+
+To make this script work you will need to do the following:
+* run the geoSCOUT admin install at least once on the published session host as this creates the geoSCOUT exe in program files.
+* edit the geoSCOUT Build non Admin location in the script to match your setup
+
+Optional Tweaks
+* comment out the `Write-Host` lines to make it fully silent
+* you can make the PowerShell script an exe using tools like [PS2EXE](https://github.com/MScholtes/PS2EXE)
+
+### known issues
+* the pin to task bar screen will always show up unless the user manually selects don't remind me
+* Tools like [PS2EXE](https://github.com/MScholtes/PS2EXE) may cause false positives in your EDR or AntiVirus you may need to add the hash of your exe to the allow list
