@@ -52,7 +52,7 @@ if (Test-Path $geoSCOUT_ProgramFilesx86)
 write-host "geoSCOUT install is detected"
 
 
-#check if the modified date is newer then mod date.
+#check if the modified date is newer than mod date.
 
 if ($get_geoSCOUT_date.LastWriteTime -gt $mod_date)
 {
